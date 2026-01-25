@@ -1,26 +1,24 @@
-# DevVault 🚀
+# <img src="public/logo_final.png" width="40" vertical-align="middle"> DevVault
 
-**DevVault** (formerly CSELibrary) is a premium, high-performance resource hub designed for Computer Science students and engineering professionals. It provides a curated library of interactive notebooks, field-tested PDFs, and an AI-powered study assistant to bridge the gap between academic theory and industry practice.
+![React](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white) ![Gemini](https://img.shields.io/badge/Google_Gemini-8E75E9?style=for-the-badge&logo=googlegemini&logoColor=white) ![Razorpay](https://img.shields.io/badge/Razorpay-02042B?style=for-the-badge&logo=razorpay&logoColor=3395FF)
+
+**DevVault** is a premium, high-performance resource hub designed for Computer Science students and engineering professionals. It provides a curated library of interactive notebooks, field-tested PDFs, and an AI-powered study assistant to bridge the gap between academic theory and industry practice.
 
 ---
 
 ## 📸 Project Showcase
 
-### ⚡ Hero Section
-![Hero Section](public/screenshots/hero.png)
-*A modern, high-impact landing page featuring dynamic floating tech icons and smooth animations.*
+<p align="center">
+  <img src="public/screenshots/hero.png" width="900" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+</p>
 
-### 📒 Interactive Notebooks
-![Notebooks Section](public/screenshots/notebooks.png)
-*Deep-dive into subjects like DSA, Java, and SQL with structured, interactive mastery guides.*
+<p align="center">
+  <img src="public/screenshots/notebooks.png" width="440" style="border-radius: 15px;"> <img src="public/screenshots/chatbot.png" width="440" style="border-radius: 15px;">
+</p>
 
-### 🤖 AI Study Assistant (Chatbot)
-![Chatbot Section](public/screenshots/chatbot.png)
-*Powered by Google Gemini, our integrated chatbot helps students solve complex engineering queries in real-time.*
-
-### 📚 Premium PDF Library
-![PDF Library](public/screenshots/pdfs.png)
-*A sleek, filterable library with secure Razorpay integration and automated email delivery.*
+<p align="center">
+  <img src="public/screenshots/pdfs.png" width="900" style="border-radius: 20px;">
+</p>
 
 ---
 
@@ -49,7 +47,7 @@
 - **Runtime**: Node.js
 - **Database**: [MongoDB](https://www.mongodb.com/) with [Mongoose](https://mongoosejs.com/)
 - **AI**: [Google Generative AI](https://ai.google.dev/) (Gemini Flash)
-- **Cloud Storage**: [Cloudinary](https://cloudinary.com/) (for assets)
+- **Storage**: Local Server Storage (Self-hosted assets)
 
 ### Services
 - **Payments**: [Razorpay](https://razorpay.com/)
@@ -58,51 +56,48 @@
 
 ---
 
-## 🚀 Getting Started
+## 🔄 DevVault Ecosystem Flow
 
-### Prerequisites
-- Node.js (v20 or higher)
-- MongoDB account
-- Razorpay API keys
-- Google AI API key
+```mermaid
+graph TD
+    %% Node Definitions
+    Start((DevVault Portal)) --> Home[Home Page]
+    
+    subgraph Path1 [📘 Interactive Learning Path]
+    Home --> BrowseNB[Explore Notebooks]
+    BrowseNB --> Subj[Select Subject e.g. DSA, Java]
+    Subj --> Study[Access Interactive Mastery Guide]
+    end
+    
+    subgraph Path2 [💳 Resource Acquisition Flow]
+    Home --> Library[Premium PDF Library]
+    Library --> Filter[Search & Filter Content]
+    Filter --> Modal[Preview & Select Resource]
+    Modal --> Email[Secure Checkout Setup]
+    Email --> Pay[Razorpay Secure Gateway]
+    Pay --> Success[Payment Verified]
+    Success --> MailOut[SMTP Automated Delivery]
+    MailOut --> Download[JWT-Secured Download Link]
+    end
+    
+    subgraph Path3 [🤖 Intelligent Support]
+    Global[Any Page] --> AI[AI Study Assistant]
+    AI --> Gemini[Gemini Pro Reasoning]
+    Gemini --> Resolve[Technical Query Resolved]
+    end
 
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/devvault.git
-   cd devvault
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Environment Setup**
-   Create a `.env` file in the root directory and add your secrets:
-   ```env
-   # Database
-   MONGODB_URI=your_mongodb_uri
-
-   # Razorpay
-   RAZORPAY_KEY_ID=your_razorpay_key_id
-   RAZORPAY_KEY_SECRET=your_razorpay_secret
-
-   # Email
-   MAIL_USER=your_email
-   MAIL_PASS=your_app_password
-
-   # AI & URL
-   GEMINI_API_KEY=your_gemini_key
-   BASE_URL=http://localhost:3000
-   ```
-
-4. **Run the Development Server**
-   ```bash
-   npm run dev
-   ```
-   Open [http://localhost:3000](http://localhost:3000) in your browser.
+    %% Branding and Styling
+    style Start fill:#00A3FF,stroke:#00A3FF,color:#fff,stroke-width:2px
+    style Home fill:#0F172A,stroke:#1E293B,color:#fff
+    style Pay fill:#2563eb,stroke:#1e40af,color:#fff
+    style MailOut fill:#059669,stroke:#047857,color:#fff
+    style Gemini fill:#7c3aed,stroke:#6d28d9,color:#fff
+    
+    %% Subgraph Styling
+    style Path1 fill:#000000,stroke:#e2e8f0,stroke-dasharray: 5 5
+    style Path2 fill:#000000,stroke:#e2e8f0,stroke-dasharray: 5 5
+    style Path3 fill:#000000,stroke:#e2e8f0,stroke-dasharray: 5 5
+```
 
 ---
 
@@ -137,4 +132,4 @@ Standalone Project - Created by **[Aman Kishor](https://github.com/kishoraman21)
 
 ---
 
-*Built with ❤️ for the Developer Community.*
+**Questions?** [kishoraman.works@gmail.com](mailto:kishoraman.works@gmail.com)
