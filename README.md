@@ -8,17 +8,29 @@
 
 ## 📸 Project Showcase
 
+### ⚡ Professional Hero Landing
 <p align="center">
-  <img src="public/screenshots/hero.png" width="900" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+  <img src="public/screenshots/hero.png" width="900">
 </p>
+A modern, high-impact landing page designed with Tailwind CSS 4 and Framer Motion, featuring dynamic floating tech icons and smooth, responsive animations.
 
+### 📒 Interactive Notebooks
 <p align="center">
-  <img src="public/screenshots/notebooks.png" width="440" style="border-radius: 15px;"> <img src="public/screenshots/chatbot.png" width="440" style="border-radius: 15px;">
+  <img src="public/screenshots/notebooks.png" width="900">
 </p>
+Deep-dive into subjects like DSA, Java, and SQL with our structured, interactive mastery guides that bridge the gap between theory and code.
 
+### 🤖 AI Study Assistant
 <p align="center">
-  <img src="public/screenshots/pdfs.png" width="900" style="border-radius: 20px;">
+  <img src="public/screenshots/chatbot.png" width="900">
 </p>
+Our integrated chatbot, powered by Google Gemini Pro Flash, provides students with real-time technical query resolution specialized for Computer Science.
+
+### 📚 Premium PDF Library
+<p align="center">
+  <img src="public/screenshots/pdfs.png" width="900">
+</p>
+A sleek, filterable library featuring secure digital asset protection, Razorpay checkout integration, and automated production-grade email delivery.
 
 ---
 
